@@ -1,0 +1,24 @@
+.homeHeader {
+	font-size: 100px;
+	color: rgb(47, 42, 51);
+	font-family: "Courier New", Courier, monospace;
+	text-align: center;
+	padding-top: 40px;
+}
+
+#mainNav {
+	display: flex;
+	justify-content: space-between;
+	background-color: darkslategrey;
+	color: white;
+}
+#mainNav div {
+	font-family: "Courier New", Courier, monospace;
+	margin: 30px;
+	font-size: 70px;
+	color: white;
+}
+#mainNav button {
+	height: 40px;
+	margin: 40px;
+}
