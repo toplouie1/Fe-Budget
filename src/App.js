@@ -5,6 +5,7 @@ import "./App.css";
 import Nav from "./Components/Nav";
 // Pages
 import Home from "./Pages/Home";
+import Index from "./Pages/Index";
 
 function App() {
 	return (
@@ -13,6 +14,7 @@ function App() {
 				<Nav />
 				<Routes>
 					<Route path="/" element={<Home />} />
+					<Route path="/transactions" element={<Index />} />
 				</Routes>
 			</Router>
 		</div>

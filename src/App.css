@@ -83,3 +83,18 @@
 	border-bottom-right-radius: 1px;
 	opacity: 0.7;
 }
+
+/* // TRANSACTIONS */
+
+.allTransactions {
+	display: grid;
+	grid-template-columns: 1fr 1fr 3fr;
+	text-align: center;
+	margin: 10px;
+	font-size: 30px;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.allTransactions div {
+	margin: 13px;
+	border-bottom: 1px solid #ffe26a;
+}
