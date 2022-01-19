@@ -4,9 +4,11 @@ import { Link } from "react-router-dom";
 function Nav() {
 	return (
 		<div id="mainNav">
-			<div>
-				<Link to="/">Captain's Log</Link>
-			</div>
+			<h1>
+				<Link className="thelogo" to="/">
+					Budget App
+				</Link>
+			</h1>
 			<button>
 				<Link to="/transaction/new">NEW TRANSACTION</Link>
 			</button>

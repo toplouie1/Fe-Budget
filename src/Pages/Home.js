@@ -1,7 +1,12 @@
 import React from "react";
 
 function Home() {
-	return <div className="homeHeader">Welcome To The Budget App</div>;
+	return (
+		<div>
+			<div className="homeFirstHeader">Welcôme Tô The </div>
+			<div className="homeHeader">Budget App </div>
+		</div>
+	);
 }
 
 export default Home;

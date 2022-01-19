@@ -1,24 +1,85 @@
+* {
+	background-color: #abd699;
+}
+.homeFirstHeader {
+	font-size: 50px;
+	color: black;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	text-align: center;
+	padding-top: 30px;
+	font-weight: 100;
+	animation: the-welcome 1.5s ease-in-out;
+}
 .homeHeader {
 	font-size: 100px;
-	color: rgb(47, 42, 51);
-	font-family: "Courier New", Courier, monospace;
+	color: black;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 	text-align: center;
 	padding-top: 40px;
+	animation: the-first 1.5s ease-in-out;
+	font-weight: 200;
+	line-height: 1;
+}
+
+@keyframes the-welcome {
+	0% {
+		opacity: 0;
+	}
+	33% {
+		opacity: 0.3;
+	}
+	66% {
+		opacity: 0.6;
+	}
+}
+
+@keyframes the-first {
+	0% {
+		margin-left: -60px;
+		opacity: 0;
+	}
+	33% {
+		opacity: 0.3;
+	}
+	66% {
+		opacity: 0.6;
+	}
 }
 
 #mainNav {
 	display: flex;
 	justify-content: space-between;
-	background-color: darkslategrey;
-	color: white;
+	border-bottom: 1px solid black;
 }
-#mainNav div {
+
+#mainNav h1 {
 	font-family: "Courier New", Courier, monospace;
 	margin: 30px;
 	font-size: 70px;
 	color: white;
+	text-transform: none;
+}
+#mainNav h1 a {
+	text-decoration: none;
+	color: black;
+	font-weight: 100;
 }
 #mainNav button {
 	height: 40px;
 	margin: 40px;
+	border: none;
+	border-radius: 4px;
+}
+#mainNav button a {
+	font-size: 20px;
+	text-decoration: none;
+	color: black;
+	transition: 0.1s ease-in;
+}
+#mainNav button :hover {
+	border-bottom: 4px solid #000000;
+	border-bottom-style: inset;
+	border-bottom-left-radius: 1px;
+	border-bottom-right-radius: 1px;
+	opacity: 0.7;
 }
