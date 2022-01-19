@@ -43,7 +43,10 @@ function TransactionDetails() {
 
 			<button onClick={handleDelete}>DELETE</button>
 			<button>
-				<Link to="/transactions">BACK</Link>
+				<Link to={`/transactions/${index}/edit`}>EDIT</Link>
+			</button>
+			<button>
+				<Link to={"/transactions"}>BACK</Link>
 			</button>
 		</div>
 	);
