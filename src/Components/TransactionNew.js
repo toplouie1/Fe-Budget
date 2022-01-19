@@ -1,6 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 function TransactionNew() {
 	const [transaction, setTransaction] = useState({
@@ -31,7 +31,6 @@ function TransactionNew() {
 		<div className="newForm">
 			<form onSubmit={handleSubmit}>
 				<div>
-					{/* <label htmlFor="name">Name: </label> */}
 					<input
 						id="name"
 						value={transaction.name}
@@ -42,7 +41,6 @@ function TransactionNew() {
 					/>
 				</div>
 				<div>
-					{/* <label htmlFor="date">Date: </label> */}
 					<input
 						id="date"
 						value={transaction.date}
@@ -54,7 +52,6 @@ function TransactionNew() {
 				</div>
 
 				<div>
-					{/* <label htmlFor="name">Amount: </label> */}
 					<input
 						id="amount"
 						value={transaction.amount}
@@ -65,7 +62,6 @@ function TransactionNew() {
 					/>
 				</div>
 				<div>
-					{/* <label htmlFor="name">From: </label> */}
 					<input
 						id="from"
 						value={transaction.from}
@@ -77,6 +73,9 @@ function TransactionNew() {
 				</div>
 
 				<input className="newButton" type="submit" />
+				<button className="newButton">
+					<Link to="/transactions">Back</Link>
+				</button>
 			</form>
 		</div>
 	);

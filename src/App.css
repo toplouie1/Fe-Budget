@@ -114,7 +114,7 @@
 	font-family: monospace;
 }
 .newForm div input {
-	font-size: 30px;
+	font-size: 20px;
 	border: none;
 	margin: 20px;
 	width: 60%;
@@ -126,6 +126,7 @@
 }
 .newButton {
 	font-size: 30px;
+	margin: 30px;
 }
 .newButton:hover {
 	opacity: 0.6;
