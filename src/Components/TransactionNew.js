@@ -6,7 +6,7 @@ function TransactionNew() {
 	const [transaction, setTransaction] = useState({
 		date: "",
 		name: "",
-		ampount: "",
+		amount: "",
 		from: "",
 	});
 	const navigate = useNavigate();
