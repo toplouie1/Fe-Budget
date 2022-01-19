@@ -5,7 +5,7 @@ function Nav() {
 	return (
 		<div id="mainNav">
 			<h1>
-				<Link to="/transactions">Budget App</Link>
+				<Link to="/transactions">Budget-App</Link>
 			</h1>
 			<button>
 				<Link to="/transactions/new">NEW TRANSACTION</Link>

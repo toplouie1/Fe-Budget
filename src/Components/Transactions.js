@@ -25,7 +25,7 @@ function Transactions() {
 				<div>
 					<Link to={`/transactions/${index}`}>{each.from}</Link>
 				</div>
-				<div>{each.amount}</div>
+				<div>$ {each.amount}</div>
 			</div>
 		);
 	});

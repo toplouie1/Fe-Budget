@@ -28,45 +28,55 @@ function TransactionNew() {
 	};
 
 	return (
-		<div>
+		<div className="newForm">
 			<form onSubmit={handleSubmit}>
-				<label htmlFor="name">Name:</label>
-				<input
-					id="name"
-					value={transaction.name}
-					type="text"
-					onChange={handleTextChange}
-					placeholder="Name"
-					required
-				/>
-				<label htmlFor="date">Date : </label>
-				<input
-					id="date"
-					value={transaction.date}
-					type="text"
-					onChange={handleTextChange}
-					placeholder="Date"
-					required
-				/>
-				<label htmlFor="name">Amount :</label>
-				<input
-					id="amount"
-					value={transaction.amount}
-					type="number"
-					onChange={handleTextChange}
-					placeholder="$"
-					required
-				/>
-				<label htmlFor="name">From :</label>
-				<input
-					id="from"
-					value={transaction.from}
-					type="text"
-					onChange={handleTextChange}
-					placeholder="From ..."
-					required
-				/>
-				<input type="submit" />
+				<div>
+					{/* <label htmlFor="name">Name: </label> */}
+					<input
+						id="name"
+						value={transaction.name}
+						type="text"
+						onChange={handleTextChange}
+						placeholder="Name"
+						required
+					/>
+				</div>
+				<div>
+					{/* <label htmlFor="date">Date: </label> */}
+					<input
+						id="date"
+						value={transaction.date}
+						type="text"
+						onChange={handleTextChange}
+						placeholder="Date"
+						required
+					/>
+				</div>
+
+				<div>
+					{/* <label htmlFor="name">Amount: </label> */}
+					<input
+						id="amount"
+						value={transaction.amount}
+						type="number"
+						onChange={handleTextChange}
+						placeholder="$"
+						required
+					/>
+				</div>
+				<div>
+					{/* <label htmlFor="name">From: </label> */}
+					<input
+						id="from"
+						value={transaction.from}
+						type="text"
+						onChange={handleTextChange}
+						placeholder="From ..."
+						required
+					/>
+				</div>
+
+				<input className="newButton" type="submit" />
 			</form>
 		</div>
 	);
