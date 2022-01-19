@@ -31,6 +31,9 @@ function Transactions() {
 	});
 	return (
 		<div>
+			<button>
+				<Link to="/">Home</Link>
+			</button>
 			<div>{mapping}</div>
 		</div>
 	);

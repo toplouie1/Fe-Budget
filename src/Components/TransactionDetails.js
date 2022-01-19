@@ -41,9 +41,9 @@ function TransactionDetails() {
 			<div>Amount : $ {transaction.amount}</div>
 			<div>From : {transaction.from}</div>
 
-			<button onClick={handleDelete}>Delete</button>
+			<button onClick={handleDelete}>DELETE</button>
 			<button>
-				<Link to="/transactions">Back</Link>
+				<Link to="/transactions">BACK</Link>
 			</button>
 		</div>
 	);

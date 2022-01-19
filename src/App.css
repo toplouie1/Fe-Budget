@@ -1,5 +1,5 @@
-* {
-	background-color: #abd699;
+body {
+	background: #9198e5;
 }
 /* NAV */
 #mainNav {
@@ -106,6 +106,14 @@
 .allTransactions div {
 	margin: 18px;
 }
+.allTransactions div a {
+	color: purple;
+	text-decoration: none;
+}
+.allTransactions div a:hover {
+	color: red;
+	text-decoration: underline;
+}
 
 /* THE NEW FORM  */
 
@@ -120,6 +128,7 @@
 	width: 60%;
 	border-bottom: 1px solid black;
 	transition: 0.3s ease-in;
+	background-color: #9198e5;
 }
 .newForm div input:hover {
 	opacity: 0.3;
@@ -127,6 +136,12 @@
 .newButton {
 	font-size: 30px;
 	margin: 30px;
+	padding: 10px;
+	border-radius: 10px;
+}
+.newButton a {
+	color: black;
+	text-decoration: none;
 }
 .newButton:hover {
 	opacity: 0.6;
@@ -135,7 +150,24 @@
 /* DETAILS  */
 
 .showDetails {
+	line-height: 1.7;
 	font-size: 40px;
 	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 	text-align: center;
+}
+.showDetails button {
+	margin: 20px;
+	font-size: 20px;
+	cursor: pointer;
+	border-radius: 10px;
+	padding: 10px;
+	transition: 0.3s ease-in;
+	background-color: #9198e5;
+}
+.showDetails button:hover {
+	opacity: 0.6;
+}
+.showDetails button a {
+	color: black;
+	text-decoration: none;
 }
