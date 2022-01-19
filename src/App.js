@@ -3,7 +3,6 @@ import "./App.css";
 
 // Nav
 import Nav from "./Components/Nav";
-import TransactionNew from "./Components/TransactionNew";
 // Pages
 import Home from "./Pages/Home";
 import Index from "./Pages/Index";

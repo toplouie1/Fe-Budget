@@ -4,7 +4,7 @@ import TransactionNew from "../Components/TransactionNew";
 function New() {
 	return (
 		<div>
-			<h1>The New Page</h1>
+			<h1 className="homeFirstHeader">The New Page</h1>
 			<TransactionNew />
 		</div>
 	);
