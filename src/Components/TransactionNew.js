@@ -20,7 +20,6 @@ function TransactionNew() {
 			.post("http://localhost:8000/transactions", transaction)
 			.then((res) => {
 				navigate("/transactions");
-				console.log(res);
 			})
 			.catch((err) => {
 				console.log(err);

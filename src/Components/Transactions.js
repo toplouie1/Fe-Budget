@@ -5,8 +5,6 @@ import { Link } from "react-router-dom";
 function Transactions() {
 	// creating a state
 	const [transactions, setTransactions] = useState([]);
-
-	console.log(transactions);
 	useEffect(() => {
 		axios
 			.get("http://localhost:8000/transactions")

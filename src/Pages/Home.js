@@ -4,7 +4,7 @@ function Home() {
 	return (
 		<div>
 			<div className="homeFirstHeader">Welcôme Tô The </div>
-			<div className="homeHeader">Budget App </div>
+			<div className="homeHeader">Budget - App </div>
 		</div>
 	);
 }
