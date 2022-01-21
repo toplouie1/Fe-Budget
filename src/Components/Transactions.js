@@ -29,10 +29,12 @@ function Transactions() {
 	});
 	return (
 		<div>
-			<button>
-				<Link to="/">Home</Link>
-			</button>
 			<div>{mapping}</div>
+			<div className="homeBtn">
+				<button>
+					<Link to="/">Home</Link>
+				</button>
+			</div>
 		</div>
 	);
 }
