@@ -8,7 +8,7 @@ function Nav() {
 				<Link to="/transactions">Budget</Link>
 			</h1>
 			<button>
-				<Link to="/transactions/new">NEW TRANSACTION</Link>
+				<Link to="/transactions/new">New</Link>
 			</button>
 		</div>
 	);

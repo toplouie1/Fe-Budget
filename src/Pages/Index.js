@@ -28,9 +28,9 @@ function Index() {
 	return (
 		<div>
 			<h1 className="totalAmount">
-				Bank Account Total:
-				<span style={total >= 1 ? { color: "blue" } : { color: "red" }}>
-					{total}
+				Bank Account Total
+				<span style={total >= 1 ? { color: "purple" } : { color: "red" }}>
+					: {total}
 				</span>
 			</h1>
 			<h1 className="homeFirstHeader">Index Page</h1>
