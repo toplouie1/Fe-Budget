@@ -3,13 +3,16 @@ import Transactions from "../Components/Transactions";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
+const API = process.env.REACT_APP_API_URL;
+
 function Index() {
 	// // THE TOtAL NUMBER
 	const [total, setTotal] = useState(0);
 
 	useEffect(() => {
 		axios
-			.get("http://localhost:8000/transactions")
+			// .get("http://localhost:8000/transactions")
+			.get(`${API}/transactions`)
 			.then((res) => {
 				setTotal(all(res.data));
 			})

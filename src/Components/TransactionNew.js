@@ -2,6 +2,8 @@ import { useState } from "react";
 import axios from "axios";
 import { useNavigate, Link } from "react-router-dom";
 
+const API = process.env.REACT_APP_API_URL;
+
 function TransactionNew() {
 	const [transaction, setTransaction] = useState({
 		date: "",
@@ -17,7 +19,7 @@ function TransactionNew() {
 	const handleSubmit = (event) => {
 		event.preventDefault();
 		axios
-			.post("http://localhost:8000/transactions", transaction)
+			.post(`${API}/transaction`, transaction)
 			.then((res) => {
 				navigate("/transactions");
 			})

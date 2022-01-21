@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 
+const API = process.env.REACT_APP_API_URL;
+
 function TransactionDetails() {
 	const [transaction, setTransaction] = useState([]);
 	// using params inorder to get the index Number ..
@@ -12,7 +14,7 @@ function TransactionDetails() {
 
 	useEffect(() => {
 		axios
-			.get(`http://localhost:8000/transactions/${index}`)
+			.get(`${API}/transactions/${index}`)
 			.then((res) => {
 				// whatever data we recieve we will add it to the state ...
 				setTransaction(res.data);
@@ -25,7 +27,7 @@ function TransactionDetails() {
 
 	const handleDelete = () => {
 		axios
-			.delete(`http://localhost:8000/transactions/${index}`)
+			.delete(`${API}/transactions/${index}`)
 			.then((res) => {
 				navigate("/transactions");
 			})

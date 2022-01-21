@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams, useNavigate, Link } from "react-router-dom";
 
+const API = process.env.REACT_APP_API_URL;
+
 function TransactionEdit() {
 	let { index } = useParams();
 	const [transaction, setTransaction] = useState({
@@ -17,7 +19,7 @@ function TransactionEdit() {
 	};
 	useEffect(() => {
 		axios
-			.get(`http://localhost:8000/transactions/${index}`)
+			.get(`${API}/transactions/${index}`)
 			.then((res) => {
 				setTransaction(res.data);
 			})
@@ -29,7 +31,7 @@ function TransactionEdit() {
 	const handleSubmit = (event) => {
 		event.preventDefault();
 		axios
-			.put(`http://localhost:8000/transactions/${index}`, transaction)
+			.put(`${API}/transactions/${index}`, transaction)
 			.then((res) => {
 				navigate("/transactions");
 			})

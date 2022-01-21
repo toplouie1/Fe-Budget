@@ -2,12 +2,14 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
+const API = process.env.REACT_APP_API_URL;
+
 function Transactions() {
 	// creating a state
 	const [transactions, setTransactions] = useState([]);
 	useEffect(() => {
 		axios
-			.get("http://localhost:8000/transactions")
+			.get(`${API}/transactions`)
 			.then((res) => {
 				setTransactions(res.data);
 			})
