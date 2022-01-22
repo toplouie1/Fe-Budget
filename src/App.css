@@ -200,9 +200,19 @@ body {
 
 .showDetails {
 	line-height: 2;
-	font-size: 30px;
+	font-size: 35px;
 	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 	text-align: center;
+	border: 2px solid black;
+	border-radius: 10px;
+	width: 40%;
+	margin: auto;
+	background-color: rgb(255 251 228);
+	padding: 30px;
+	box-shadow: 1px 2px 1px rgb(14, 14, 14);
+}
+.showDetails div {
+	border-bottom: 1px solid purple;
 }
 .showDetails button {
 	margin: 20px;
@@ -240,5 +250,9 @@ body {
 	.allTransactions {
 		width: 80%;
 		font-size: 14px;
+	}
+	.showDetails {
+		width: 80%;
+		font-size: 25px;
 	}
 }
