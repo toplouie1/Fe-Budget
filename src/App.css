@@ -20,10 +20,12 @@ body {
 	background-color: #111;
 	color: rgb(255 251 228);
 	border: none;
+	transition: 1s;
 }
 .homeBtn button a:hover {
 	border: 1px solid rgb(255 251 228);
 }
+
 /* NAV */
 #mainNav {
 	display: flex;
@@ -144,14 +146,14 @@ body {
 	grid-template-columns: 1fr 1fr 3fr;
 	font-size: 20px;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-	border-bottom: 1px solid rgb(255 251 228);
+	border-bottom: 1px solid rgb(59 68 80);
 }
 .allTransactions div {
 	color: #c1c1c1;
 	margin: 18px;
 }
 .allTransactions div a {
-	color: purple;
+	color: #7b8bff;
 	text-decoration: none;
 }
 .allTransactions div a:hover {
@@ -224,7 +226,7 @@ body {
 	box-shadow: 1px 2px 1px rgb(14, 14, 14);
 }
 .showDetails div {
-	border-bottom: 2px solid rgb(13, 0, 71);
+	border-bottom: 1px solid rgb(13, 0, 71);
 }
 .showDetails button {
 	margin: 20px;

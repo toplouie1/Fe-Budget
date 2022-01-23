@@ -19,7 +19,7 @@ function TransactionNew() {
 	const handleSubmit = (event) => {
 		event.preventDefault();
 		axios
-			.post(`${API}/transaction`, transaction)
+			.post(`${API}/transactions`, transaction)
 			.then((res) => {
 				navigate("/transactions");
 			})

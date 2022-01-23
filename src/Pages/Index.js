@@ -11,7 +11,6 @@ function Index() {
 
 	useEffect(() => {
 		axios
-			// .get("http://localhost:8000/transactions")
 			.get(`${API}/transactions`)
 			.then((res) => {
 				setTotal(all(res.data));
@@ -32,7 +31,7 @@ function Index() {
 		<div>
 			<h1 className="totalAmount">
 				Bank Account Total
-				<span style={total >= 1 ? { color: "purple" } : { color: "red" }}>
+				<span style={total >= 1000 ? { color: "purple" } : { color: "red" }}>
 					: {total}
 				</span>
 			</h1>
