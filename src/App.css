@@ -8,18 +8,24 @@ body {
 	text-align: center;
 }
 .homeBtn button {
-	font-size: 30px;
-	border-radius: 10px;
+	font-size: 20px;
 	margin: auto;
+	background-color: #111;
+	border: 1px solid rgb(255 251 228);
 	margin: 30px;
 }
 .homeBtn button a {
 	text-decoration: none;
-	padding: 5px;
+	padding: 10px;
+	background-color: #111;
+	color: rgb(255 251 228);
+	border: none;
+}
+.homeBtn button a:hover {
+	border: 1px solid rgb(255 251 228);
 }
 /* NAV */
 #mainNav {
-	box-shadow: 1px 2px 5px rgb(14, 14, 14);
 	display: flex;
 	justify-content: space-between;
 	border-bottom: 1px solid black;
@@ -177,12 +183,12 @@ body {
 	border: none;
 	margin: 20px;
 	width: 60%;
-	font-family: monospace;
+	font-family: Arial, Helvetica, sans-serif;
 	border: 1px solid black;
 	transition: 0.1s ease-in;
 	opacity: 0.8;
 	padding: 5px;
-	border-radius: 10px;
+	border-radius: 3px;
 }
 .newForm div input:hover {
 	opacity: 0.3;
@@ -205,7 +211,7 @@ body {
 /* DETAILS  */
 
 .showDetails {
-	line-height: 2;
+	line-height: 2.3;
 	font-size: 35px;
 	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 	text-align: center;
@@ -218,7 +224,7 @@ body {
 	box-shadow: 1px 2px 1px rgb(14, 14, 14);
 }
 .showDetails div {
-	border-bottom: 1px solid rgb(0, 0, 0);
+	border-bottom: 2px solid rgb(13, 0, 71);
 }
 .showDetails button {
 	margin: 20px;
@@ -227,7 +233,9 @@ body {
 	border-radius: 10px;
 	padding: 10px;
 	margin: 30px;
-	transition: 0.3s ease-in;
+	transition: 0.1s ease-in;
+	background-color: transparent;
+	border: 1px solid rgb(0, 0, 53);
 }
 .showDetails button:hover {
 	opacity: 0.6;
