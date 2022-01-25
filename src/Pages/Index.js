@@ -35,7 +35,7 @@ function Index() {
 					: {total}
 				</span>
 			</h1>
-			<h1 className="homeFirstHeader">Index Page</h1>
+			<h1 className="homeFirstHeader">All Transactions</h1>
 			<Transactions />
 		</div>
 	);
