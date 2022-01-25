@@ -5,8 +5,8 @@ import { Link, useParams, useNavigate } from "react-router-dom";
 const API = process.env.REACT_APP_API_URL;
 
 function Transactions() {
-	let { index } = useParams();
-	let navigate = useNavigate();
+	// let { index } = useParams();
+	// let navigate = useNavigate();
 
 	// creating a state
 	const [transactions, setTransactions] = useState([]);
@@ -20,16 +20,16 @@ function Transactions() {
 				throw err;
 			});
 	}, []);
-	const handleDelete = () => {
-		axios
-			.delete(`${API}/transactions/${index}`)
-			.then((res) => {
-				navigate("/transactions");
-			})
-			.catch((err) => {
-				console.log(err);
-			});
-	};
+	// const handleDelete = () => {
+	// 	axios
+	// 		.delete(`${API}/transactions/${index}`)
+	// 		.then((res) => {
+	// 			navigate("/transactions");
+	// 		})
+	// 		.catch((err) => {
+	// 			console.log(err);
+	// 		});
+	// };
 
 	const mapping = transactions.map((each, index) => {
 		return (
