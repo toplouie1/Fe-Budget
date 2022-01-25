@@ -241,7 +241,7 @@ img:hover {
 	font-size: 30px;
 	font-family: serif;
 	text-align: center;
-	border: 2px solid black;
+	/* border: 2px solid black; */
 	border-radius: 10px;
 	width: 30%;
 	margin: auto;
@@ -250,7 +250,8 @@ img:hover {
 	box-shadow: 1px 2px 1px rgb(14, 14, 14);
 }
 .showDetails div {
-	border-bottom: 1px solid rgb(13, 0, 71);
+	margin: 20px;
+	border: 1px solid rgb(13, 0, 71);
 }
 .showDetails button {
 	margin: 20px;
