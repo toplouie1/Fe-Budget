@@ -38,10 +38,14 @@ function TransactionDetails() {
 
 	return (
 		<div className="showDetails">
-			<div>Name : {transaction.name}</div>
-			<div>Date : {transaction.date}</div>
-			<div>Amount : $ {transaction.amount}</div>
-			<div>From : {transaction.from}</div>
+			<div className="transactionDiv">
+				<div className="transactionFirst">Name : {transaction.name}</div>
+				<div className="transactionFirst">Date : {transaction.date}</div>
+			</div>
+			<div className="transactionDivv">
+				<div className="transactionSecond">Amount : $ {transaction.amount}</div>
+				<div className="transactionSecond">From : {transaction.from}</div>
+			</div>
 
 			<button onClick={handleDelete}>DELETE</button>
 			<button>

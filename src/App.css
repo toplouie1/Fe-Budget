@@ -76,7 +76,7 @@ body {
 	background: -webkit-linear-gradient(#c4ff9f, #001cff);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	font-family: "Architects Daughter", cursive;
+	font-family: sans-serif;
 	text-align: center;
 	padding-top: 10px;
 	font-weight: 100;
@@ -87,7 +87,7 @@ body {
 	background: -webkit-linear-gradient(#c4ff9f, #001cff);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	font-family: "Architects Daughter", cursive;
+	font-family: sans-serif;
 	text-align: center;
 	padding-top: 40px;
 	animation: the-first 1.5s ease-in-out;
@@ -251,16 +251,71 @@ img:hover {
 	text-align: center;
 	/* border: 2px solid black; */
 	border-radius: 10px;
-	width: 30%;
+	/* width: 30%; */
 	margin: auto;
-	background-color: rgb(179 183 255);
+	/* background-color: rgb(179 183 255); */
 	padding: 20px;
 	box-shadow: 1px 2px 1px rgb(14, 14, 14);
 }
-.showDetails div {
-	margin: 20px;
-	border: 1px solid rgb(13, 0, 71);
+
+.transactionDiv {
+	display: flex;
+	color: white;
+	justify-content: space-around;
 }
+.transactionDivv {
+	display: flex;
+	color: white;
+	justify-content: space-around;
+}
+.transactionFirst {
+	border: 1px solid white;
+	padding: 10px;
+	font-size: 25px;
+	color: #111;
+	margin: 20px;
+	border-radius: 10px;
+	background-color: rgb(255 251 228);
+	animation: sliding 0.3s ease-in;
+	opacity: 0.8;
+}
+.transactionSecond {
+	border: 1px solid white;
+	padding: 10px;
+	font-size: 25px;
+	color: #111;
+	margin: 20px;
+	background-color: rgb(255 251 228);
+	border-radius: 10px;
+	animation: gliding 0.3s ease-in;
+	opacity: 0.8;
+}
+
+@keyframes sliding {
+	0% {
+		margin-left: -900px;
+		opacity: 0;
+	}
+	33% {
+		opacity: 0.3;
+	}
+	66% {
+		opacity: 0.6;
+	}
+}
+@keyframes gliding {
+	0% {
+		margin-right: -900px;
+		opacity: 0;
+	}
+	33% {
+		opacity: 0.3;
+	}
+	66% {
+		opacity: 0.6;
+	}
+}
+
 .showDetails button {
 	margin: 20px;
 	font-size: 15px;
@@ -269,7 +324,7 @@ img:hover {
 	padding: 10px;
 	margin: 30px;
 	transition: 0.1s ease-in;
-	background-color: transparent;
+	background-color: rgb(201, 201, 201);
 	border: 1px solid rgb(0, 0, 53);
 }
 .showDetails button:hover {
@@ -309,5 +364,11 @@ img:hover {
 	}
 	.homeFirstHeader {
 		font-size: 40px;
+	}
+	.transactionFirst {
+		font-size: 20px;
+	}
+	.transactionSecond {
+		font-size: 20px;
 	}
 }
