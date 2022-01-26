@@ -72,13 +72,13 @@ body {
 /* Home  */
 
 .homeFirstHeader {
-	font-size: 50px;
+	font-size: 60px;
 	background: -webkit-linear-gradient(#c4ff9f, #001cff);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	font-family: "Architects Daughter", cursive;
 	text-align: center;
-	padding-top: 30px;
+	padding-top: 10px;
 	font-weight: 100;
 	animation: the-welcome 1.5s ease-in-out;
 }
@@ -122,6 +122,12 @@ body {
 
 /* // TRANSACTIONS */
 
+.headerFlex {
+	display: flex;
+	justify-content: center;
+	margin: 20px;
+}
+
 .headers {
 	color: #d5dfff;
 	width: 60%;
@@ -136,17 +142,18 @@ body {
 }
 
 .totalAmount {
-	font-size: 40px;
+	margin: 10px;
+	font-size: 30px;
 	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 	text-align: center;
 	padding-top: 50px;
 	font-weight: 100;
 	border: 1px solid black;
 	border-radius: 10px;
-	width: 40%;
-	margin: auto;
+	width: 15%;
 	padding: 20px;
 	margin-top: 1em;
+	margin-bottom: 1em;
 	box-shadow: 1px 2px 3px rgb(14, 14, 14);
 	background-color: rgb(177 177 177);
 }
@@ -296,5 +303,11 @@ img:hover {
 	}
 	.newButton {
 		font-size: 10px;
+	}
+	.totalAmount {
+		width: 20%;
+	}
+	.homeFirstHeader {
+		font-size: 40px;
 	}
 }
