@@ -40,7 +40,7 @@ function Transactions() {
 				</div>
 				<div>$ {each.amount}</div>
 				<Link className="linkColor" to={`/transactions/${index}`}>
-					<img src="https://img.icons8.com/windows/32/000000/edit--v4.png" />
+					<img src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/64/000000/external-edit-miscellaneous-kiranshastry-gradient-kiranshastry.png" />
 				</Link>
 			</div>
 		);
